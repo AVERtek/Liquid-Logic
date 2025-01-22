@@ -11,17 +11,17 @@
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W5R2TQ73');</script>
+})(window,document,'script','dataLayer','GTM-000000000');</script>
 <!-- End Google Tag Manager -->
  
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PVC522VLKQ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-000000000"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-PVC522VLKQ');
+  gtag('config', 'G-0000000000');
 </script>
  
  </head>
@@ -39,8 +39,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
   <script src="https://unpkg.com/resize-observer-polyfill/dist/ResizeObserver.js"></script>
-
-<script>
+ 
+ <script>
       function Sync(selector, audioSelector) {
         var modelViewer = document.querySelector(selector);
         var sound = document.querySelector(audioSelector);
@@ -113,7 +113,17 @@ var getOutboundLink = function(url) {
   });
 }
 </script>
-<style> 
+
+ <!--code snippet to direct launch AR with ar-preferred -->
+<script>
+  window.addEventListener("load", () => {
+    var modelViewer = document.querySelector('model-viewer');
+    console.log("Can activate AR: " + modelViewer.canActivateAR);
+    modelViewer.activateAR();
+  });
+</script>
+
+ <style> 
  
 .container {
  column-count: 1;
@@ -122,15 +132,15 @@ var getOutboundLink = function(url) {
 }
   .card {
   break-inside: avoid;
-  background-color: rgb(47, 47, 46);
-  border: 2px solid rgb(47, 47, 46);
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
   padding: 10px;
   margin: 0 0 1em 0;
 }
   .card1 {
   break-inside: avoid;
-  background-color: #2F2F2E;
-  border: 2px solid rgb(47, 47, 46);
+  background-color: #000000;
+  border: 2px solid rgb(0, 0, 0);
   padding: 5px;
   margin: 0 0 1em 0;
 }
@@ -149,30 +159,32 @@ var getOutboundLink = function(url) {
 }
 
 a {
-        color: #EEE6D4;
+        color: #EA0086;
       }
   
 </style>
 
-<body bgcolor= #2F2F2E>
+<body bgcolor= #000000>
  
 <body>
- 
+
 <!--<h1>The column-count Property</h1> -->
-<!--<p>The column-count property defines the number of columns an element is divided into:</p> --> 
+<!--<p>The column-count property defines the number of columns an element is divided into:</p> -->
+ 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5R2TQ73"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-0000000"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
  
 <div class="container">
     <div class="card">
-      <img class="marginauto" src="images/Alexan_Main_Street_Logo_light.png" alt="Logo" style="max-width: 375px"> 
-      <h2 style="text-align: center;" markdown="1"><b style="color:#EEE6D4;"><p style="font-family:Source Sans Pro Black"> WELCOME TO EASY STREET</p></h2></b>
-      <h2 style="text-align: center;" markdown="1"><b style="color:#EEE6D4;"><p style="font-family:Source Sans Pro"> Studio, 1 & 2 Bedrooms with Den Options</p></h2></b>
-      <h1 style="text-align: center;" markdown="1"><b style="color:#A98B47;"><p style="font-family:Source Sans Pro Black"> NOW PRELEASING!</p></h1></b>
+      <img class="marginauto" src="images/Logo 1t.png" alt="Logo" style="max-width: 375px"> 
+      <h2 style="text-align: center;" markdown="1"><b style="color:#005AB1;"><p style="font-family:Source Sans Pro Black"> THE GLOBAL GENERATION'S BEVERAGE</p></h2></b>
+      <h2 style="text-align: center;" markdown="1"><b style="color:#EA0086;"><p style="font-family:Source Sans Pro"> Great Tasting Fruit Flavored Premium Alcohol</p></h2></b>
+      <!--<h1 style="text-align: center;" markdown="1"><b style="color:#005AB1;"><p style="font-family:Source Sans Pro Black"> NOW PRELEASING!</p></h1></b> -->
      <!--<h3 style="text-align: center;" markdown="1"><b style="color:#A98B47;"><p style="font-family:Avenir Next LT Pro"> <em>LIMITLESS</em> ACCESS, CENTERED IN <em>POSSIBILITIES</em>, <em>TRANQUIL</em> LIVING.</p></h3></b> -->
-    </div> 
+    </div>
+
  
  <div class="card"> 
       <model-viewer loading="eager" src="Models/FLOORPLAN FINAL 1.glb?sound=Sound/Inspiring Guitar 59s.mp3" camera-controls 
